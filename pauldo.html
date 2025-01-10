@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Basic HTML Portfolio">
+    <title>My Portfolio</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f0f8ff;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        header {
+            background-color: #2a9d8f;
+            color: #fff;
+            padding: 30px 0;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+        #pic {
+            border-radius: 50%;
+        }
+        h1 {
+            font-size: 3rem;
+            margin: 0;
+            font-weight: 600;
+        }
+        p {
+            line-height: 1.7;
+            font-size: 1.1rem;
+        }
+        section {
+            background-color: #fff;
+            padding: 50px;
+            margin: 30px auto;
+            max-width: 900px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            border-radius: 15px;
+        }
+        h2 {
+            color: #264653;
+            font-size: 2.2rem;
+            margin-bottom: 25px;
+            border-bottom: 4px solid #2a9d8f;
+            display: inline-block;
+            padding-bottom: 10px;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        ul li {
+            background: #fbfaf8;
+            color: #2a9d8f;
+            padding: 15px;
+            margin: 8px 0;
+            border-radius: 8px;
+            transition: background 0.3s ease;
+        }
+        ul li:hover {
+            background: #e4dece;
+        }
+        ul.projects li {
+            list-style: none;
+            margin: 15px 0;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        ul.projects li a {
+            display: block;
+            padding: 50px;
+            color: white;
+            text-decoration: none;
+            font-size: 1.2rem;
+            font-weight: bold;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            transition: transform 0.3s, background 0.3s ease;
+        }
+        ul.projects li a:hover {
+            transform: scale(1.05);
+            background-blend-mode: multiply;
+            background-color: rgba(0, 0, 0, 0.4);
+        }
+        a {
+            color: #2a9d8f;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+        a:hover {
+            color: #1d776c;
+        }
+        blockquote {
+            font-style: italic;
+            background-color: #f9f9f9;
+            border-left: 8px solid #2a9d8f;
+            margin: 40px 0;
+            padding: 25px 30px;
+            quotes: "“" "”";
+        }
+        blockquote:before {
+            content: open-quote;
+            font-size: 4rem;
+            color: #2a9d8f;
+            position: relative;
+            top: 15px;
+            left: -20px;
+        }
+        blockquote:after {
+            content: close-quote;
+            font-size: 4rem;
+            color: #2a9d8f;
+            position: relative;
+            top: 15px;
+            right: -20px;
+        }
+        footer {
+            text-align: center;
+            padding: 25px;
+            background-color: #264653;
+            color: white;
+            margin-top: 40px;
+        }
+        footer p {
+            margin: 0;
+        }
+        .contact-button {
+            background-color: #2a9d8f;
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 8px;
+            text-transform: uppercase;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+        .contact-button:hover {
+            background-color: #1d776c;
+        }
+        @media (max-width: 768px) {
+            body {
+                padding: 20px;
+            }
+            section {
+                padding: 30px;
+            }
+            h1 {
+                font-size: 2.5rem;
+            }
+            h2 {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Paul Mark's Portfolio</h1>
+        <p>Web Developer & Designer</p>
+        <img id="pic" src="pictureni.jpg" height="200px" width="200px" alt="Profile Picture">
+    </header>
+
+    <section>
+        <h2>About Me</h2>
+        <p>Hello! My name is <strong>Paul Mark Villareal</strong>. I am a passionate <em>web developer</em> and <em>designer</em> with experience in creating modern, responsive websites using HTML, CSS, JavaScript, React, and Node.js.</p>
+    </section>
+
+    <section>
+        <h2>Skills</h2>
+        <ul>
+            <li><b>HTML5</b></li>
+            <li><b>CSS3</b></li>
+            <li><b>JavaScript</b></li>
+            <li><b>React</b></li>
+            <li><b>Node.js</b></li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Projects</h2>
+        <p>Here are some of the projects I've worked on:</p>
+        <ul class="projects">
+            <li>
+                <a href="#" style="background-image: url('Flyer.jpg');">
+                    Project 1: Portfolio Website
+                </a>
+            </li>
+            <li>
+                <a href="#" style="background-image: url('Logo.jpg');">
+                    Project 2: E-commerce Store
+                </a>
+            </li>
+            <li>
+                <a href="#" style="background-image: url('SOCIALMEDIAADS.jpg');">
+                    Project 3: Blogging Platform
+                </a>
+            </li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Favorite Quote</h2>
+        <blockquote cite="https://www.goodreads.com/quotes">
+            "The only way to do great work is to love what you do." – Steve Jobs
+        </blockquote>
+    </section>
+
+    <section>
+        <h2>Contact Me</h2>
+        <p>If you'd like to get in touch, feel free to email me at: <a href="mailto:villarealpaulmark@gmail.com">villarealpaulmark@gmail.com</a></p>
+        <button class="contact-button">Email Me</button>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Paul Mark | All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
